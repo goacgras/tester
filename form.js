@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Typography from "@material-ui/core/Typography";
+import { FormattedMessage } from "react-intl";
 import Input from "@material-ui/core/Input";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
@@ -45,7 +46,7 @@ const GroupRegistrationForm = ({ setDataForm, isFormValid, reset }) => {
           <Typography
             className={style.fieldNameJPTitle}
           >
-            Group Name (JP)
+            <FormattedMessage id="app.components.GroupRegistration.groupNameJP" defaultMessage="Group Name (JP)" />
           </Typography>
         </div>
         <div>
@@ -62,7 +63,7 @@ const GroupRegistrationForm = ({ setDataForm, isFormValid, reset }) => {
           {
             !isFormValid && (
               <FormHelperText className={style.errorText}>
-                *Required
+                <FormattedMessage id="app.components.field.error.empty" defaultMessage="*Required" />
               </FormHelperText>
             )
           }
@@ -71,7 +72,7 @@ const GroupRegistrationForm = ({ setDataForm, isFormValid, reset }) => {
           <Typography
             className={style.fieldNameENTitle}
           >
-            Group Name (EN)
+            <FormattedMessage id="app.components.GroupRegistration.groupNameEN" defaultMessage="Group Name (EN)" />
           </Typography>
         </div>
         <div>
@@ -88,7 +89,7 @@ const GroupRegistrationForm = ({ setDataForm, isFormValid, reset }) => {
           <Typography
             className={style.fieldMemoTitle}
           >
-            Memo
+            <FormattedMessage id="app.components.GroupRegistration.Memo" defaultMessage="Memo" />
           </Typography>
         </div>
         <div>
@@ -107,7 +108,7 @@ const GroupRegistrationForm = ({ setDataForm, isFormValid, reset }) => {
       </div>
       <div className={style.fieldGroupTypeContainer}>
         <Typography className={style.fieldGroupTypeTitle}>
-          Group Type
+          <FormattedMessage id="app.components.GroupRegistration.groupType" defaultMessage="Group Type" />
         </Typography>
         <div>
           <RadioGroup row aria-label="group-type" value={groupType} onChange={groupTypeChangeHandler}>
