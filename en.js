@@ -1,0 +1,6 @@
+"app.components.GroupRegistration.groupNameJP": "Group Name (JP)",
+"app.components.GroupRegistration.groupNameEN": "Group Name (EN)",
+"app.components.GroupRegistration.groupType": "Group Type",
+"app.components.GroupRegistration.Memo": "Memo",
+"app.components.GroupRegistration.Executive": "Executive",
+"app.components.GroupRegistration.User": "User",

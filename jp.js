@@ -1,0 +1,6 @@
+"app.components.GroupRegistration.groupNameJP": "グループ名(JP)",
+"app.components.GroupRegistration.groupNameEN": "グループ名(EN)",
+"app.components.GroupRegistration.groupType": "グループ種別",
+"app.components.GroupRegistration.Memo": "メモ",
+"app.components.GroupRegistration.Executive": "役員",
+"app.components.GroupRegistration.User": "利用者",
